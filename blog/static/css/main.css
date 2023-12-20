@@ -1,0 +1,31 @@
+body {
+    background-color: rgba(255, 255, 255, 0.846);
+    color: rgb(0, 0, 0);
+}
+
+img {
+    max-width: 600px;
+
+}
+
+.comentarios {
+    margin: auto;
+    border: 1px solid white;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.texto {
+    margin-left: 100px;
+}
+
+.usuario {
+    font-weight: bold;
+    color: blue;
+}
+
+.fecha {
+    color: slategrey;
+    font-size: small;
+}

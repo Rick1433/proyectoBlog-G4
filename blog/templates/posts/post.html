@@ -1,0 +1,70 @@
+{% extends "base.html"%}
+
+{% block titulo %}
+<title>Posteos</title>
+{% endblock titulo %}
+
+{% block contenido %}
+
+<!-- INICIO DROPDOWN -->
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Categorias
+  </button>
+  <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="{% url 'posts:post_realizado' %}">Todas</a></li>
+      {% for posteo, categoria in ctx %}
+      <li><a class="dropdown-item" href="?id={{posteo.pk}}"> {{categoria.nombre}}</a></li>
+      {% endfor %}
+
+  </ul>
+</div>
+<!-- FIN DROPDOWN -->
+
+{% for post in posteos %}
+<br>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="{{ post.imagen.url }}" class="card-img-top" alt="NohayImagen">
+        <div class="card-body">
+          <h5 class="card-title">{{ post.titulo }}</h5>
+          <p class="card-text">{{ post.cuerpo| truncatechars:50 }} <a href="{% url 'posts:post_detail' post.pk %}">Ver mas..</a></p>
+          <p class="card-text"><small class="text-body-secondary">{{ post.fecha_creacion| date:"d-M-Y" }}</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="{{ post.imagen.url }}" class="card-img-top" alt="NohayImagen">
+        <div class="card-body">
+          <h5 class="card-title">{{ post.titulo }}</h5>
+          <p class="card-text">{{ post.cuerpo| truncatechars:50 }} <a href="{% url 'posts:post_detail' post.pk %}">Ver mas..</a></p>
+          <p class="card-text"><small class="text-body-secondary">{{ post.fecha_creacion| date:"d-M-Y" }}</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="{{ post.imagen.url }}" class="card-img-top" alt="NohayImagen">
+        <div class="card-body">
+          <h5 class="card-title">{{ post.titulo }}</h5>
+          <p class="card-text">{{ post.cuerpo| truncatechars:50 }} <a href="{% url 'posts:post_detail' post.pk %}">Ver mas..</a></p>
+          <p class="card-text"><small class="text-body-secondary">{{ post.fecha_creacion| date:"d-M-Y" }}</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="{{ post.imagen.url }}" class="card-img-top" alt="NohayImagen">
+        <div class="card-body">
+          <h5 class="card-title">{{ post.titulo }}</h5>
+          <p class="card-text">{{ post.cuerpo| truncatechars:50 }} <a href="{% url 'posts:post_detail' post.pk %}">Ver mas..</a></p>
+          <p class="card-text"><small class="text-body-secondary">{{ post.fecha_creacion| date:"d-M-Y" }}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endfor %}
+{% endblock contenido %}
