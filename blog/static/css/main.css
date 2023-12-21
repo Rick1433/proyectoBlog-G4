@@ -1,7 +1,35 @@
 body {
-    background-color: rgba(255, 255, 255, 0.846);
+    background-color: rgba(173, 242, 247, 0.76);
     color: rgb(0, 0, 0);
+    font-family: "Roboto", 'Times New Roman', Times, serif;
 }
+
+#inicio{
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    text-align: center;
+}
+
+.card_border{
+    border: 2px solid #000000; /* Grosor y color del borde */
+    border-radius: 10px; /* Radio de las esquinas del borde */
+}
+
+.imagen-responsiva {
+    margin: auto;
+    border: 2px solid #ffffff; /* Grosor y color del borde */
+    border-radius: 10px;
+}
+
+#tp{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#posteo{
+    font-style: italic;
+}
+
 
 img {
     max-width: 600px;
