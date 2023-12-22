@@ -17,7 +17,7 @@
       <li><a class="dropdown-item" href="?id={{categoria.pk}}"> {{categoria.nombre}}</a></li>
       {% endfor %}
   </ul>
-  <a class="btn btn-secondary" href="?orden=a">A-Z</a>
+  <!-- a class="btn btn-secondary" href="?orden=a">A-Z</a -->
   <!-- a class="btn btn-secondary" href="?orden=asc">ASC</a -->
   <!-- a class="btn btn-secondary" href="?orden=desc">DESC</a -->
   <!--a class="btn btn-secondary" href="?orden=z">Z-A</a -->
@@ -27,20 +27,30 @@
 {% for post in posteos %}
 <br>
 
-<div class="container">
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-          <div class="card border">
-              <img src="{{ post.imagen.url }}" class="card-img-top imagen-responsiva" alt="NohayImagen">
-              <div class="card-body">
-                  <!-- h5 class="card-title custom title">{{ post.titulo }}</h5 -->
-                  <p class="card-text">{{ post.cuerpo| truncatechars:50 }} <a href="{% url 'posts:post_detail' post.pk %}">Ver mas..</a></p>
-                  <p class="card-text"><small class="text-body-secondary">{{ post.fecha_creacion| date:"d-M-Y" }}</small></p>
-              </div>
-          </div>
-      </div>
-  </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="card border">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="{{ post.imagen.url }}" class="card-img-top imagen-responsiva" alt="NohayImagen">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <!-- <h5 class="card-title custom title">{{ post.titulo }}</h5> -->
+                            <p class="card-text-post">{{ post.cuerpo| truncatechars:140 }} <a href="{% url 'posts:post_detail' post.pk %}">Ver mas..</a></p>
+                            <p class="card-text-date"><small class="text-body-secondary">{{ post.fecha_creacion| date:"d-M-Y" }}</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+
+
 
 {% endfor %}
 {% endblock contenido %}

@@ -6,7 +6,3 @@ def contacto(request):
 
 def acerca_de(request):
     return render(request, "acerca_de.html")
-
-
-
-

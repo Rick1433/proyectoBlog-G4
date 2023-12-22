@@ -22,17 +22,6 @@
 <strong></strong>
 <span></span>
 </div>
-
-<script>
-$(function() {
-$('#alert-msg .close').click(function() {
-    $('#alert-msg').hide();
-});
-});
-</script>
-        </div>
-    </div>
-
     <div class="row">
         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
             <p class="contacto-paragraph">
@@ -42,7 +31,7 @@ $('#alert-msg .close').click(function() {
     </div>
     <div class="row">
         <div class="col-md-7 col-sm-12 col-xs-12">
-            <form action="/Contacto/Send" class="contacto" data-ajax="true" data-ajax-begin="beginHandler" data-ajax-failure="failureHandler" data-ajax-loading="#loading" data-ajax-method="POST" data-ajax-success="successHandler" id="form0" method="post">
+            <form action="https://formsubmit.co/alvarerd1993@gmail.com" method="POST" class="contacto" method="post" >
                 <div class="col-lg-12 mb-3">
                     <input class="form-control" placeholder="Nombre" name="nombre">
                 </div>
@@ -56,7 +45,6 @@ $('#alert-msg .close').click(function() {
                     <textarea class="form-control" rows="5" placeholder="Mensaje" name="mensaje"></textarea>
                 </div>
                 <div class="col-lg-12 text-right">
-                    <input type="reset" value="Borrar" class="button-gray">
                     <button type="submit" class="button-orange">
                         Enviar
                         <span id="loading" class="loading">
@@ -64,6 +52,10 @@ $('#alert-msg .close').click(function() {
                         </span>
                     </button>
                 </div>
+
+                <input type="hidden" name="_next" value="http://127.0.0.7:5500/proyecto/blog/templates/contacto.html">
+                <input type="hidden" name="_captcha" value="false">
+
             </form>
         </div>
     </div>

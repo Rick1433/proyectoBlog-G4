@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+
+{% block titulo %}
+<title>Cargar Posteo</title>
+{% endblock titulo %}
+
+{% block contenido %}
+<form class="registro" method="POST" enctype="multipart/form-data">
+    <br>
+    <h2 class="crear-posteo-title">Crear Posteo</h2>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" id="submit-postear"> Postear </button>
+</form>
+
+{% endblock contenido %}

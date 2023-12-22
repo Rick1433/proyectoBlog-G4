@@ -1,7 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.contenedor-encabezado{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 35px;
+}
+
+.imagen-1{
+    margin-right: 10px;
+}
+
+.imagen-2{
+    margin-right: 10px;
+}
+
+.cont-tex-portada{
+    margin: 150px auto;
+    width: 70%;
+}
+
+#img-tex-portada{
+    max-width: 320px;
+    float: left;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+#cuerpo-inicio{
+    color:#000000;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+}
+
+#autor-text{
+    color:#000000;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    font-size: 15px; 
+}
+
 body {
-    background-color: rgba(173, 242, 247, 0.76);
+    background-color:skyblue;
     color: rgb(0, 0, 0);
     font-family: "Roboto", 'Times New Roman', Times, serif;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
 
 #inicio{
@@ -11,28 +60,47 @@ body {
 }
 
 .card_border{
-    border: 2px solid #000000; /* Grosor y color del borde */
-    border-radius: 10px; /* Radio de las esquinas del borde */
+    border: 2px; 
+    border-radius: 10px; 
 }
 
 .imagen-responsiva {
     margin: auto;
-    border: 2px solid #ffffff; /* Grosor y color del borde */
+    border: 2px solid #ffffff; 
     border-radius: 10px;
 }
 
-#tp{
+.contenedor-imagen-posteo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 600px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.imagen-posteo {
+    width: 100%;
+    align-self: center;
+    border-radius: 10px;
+}
+
+
+
+#titulo-post{
     color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px
+
 }
 
-#posteo{
-    font-style: italic;
+#cuerpo-posteo{
+    font-family: 'Poppins', sans-serif;
 }
-
 
 img {
-    max-width: 600px;
+    margin-bottom: 20px;
 
 }
 
@@ -57,3 +125,113 @@ img {
     color: slategrey;
     font-size: small;
 }
+
+.custom-highlight{
+    font-family: "roboto", 'Times New Roman', Times, serif;
+}
+
+.dropdown{
+    margin: 1%;
+}
+
+.container li{
+    display: inline-block;
+    text-align: center;
+}
+
+.container li a:hover{
+    background: #ef8354;
+}
+
+.pie-de-pagina {
+    font-weight: bold;
+    font-size: 19px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 3em 0;
+    text-align: center;
+    background-color: #f0f0f0; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.card-text-post {
+    color: #000000;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 35px; 
+    margin-bottom: 10px; 
+}
+
+.card-text-date{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    line-height: 1.5; 
+    margin-top: 30px; 
+    margin-bottom: 10px; 
+}
+
+#post-date{
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+.crear-posteo-title {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; 
+    line-height: 1; 
+}
+
+
+#submit-postear{
+    background-color: #ffae00; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+#submit-postear:hover {
+    background-color: #45a049; 
+}
+
+.form-control {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#grupo{
+    padding: 1em 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+}
+.acerca_de{
+    color:#000000;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+
+.acerca_de_contenedor {
+    width: 600px; 
+    height: 300px; 
+    margin: 90px auto 0; 
+    padding: 10px; 
+    background-color: #f0f0f0; 
+    border-radius: 10px;
+}
+
+

@@ -19,4 +19,6 @@ urlpatterns = [
         views.Modificar_Comentario.as_view(),
         name="modificar_comentario",
     ),
+    
+    path("cargar/", views.Cargar_Post.as_view(), name="cargar_post"),
 ]
