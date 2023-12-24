@@ -41,7 +41,7 @@
     color:#000000;
     font-weight: bold;
     font-family: 'Merriweather', serif;
-    font-size: 15px; 
+    font-size: 15px;
 }
 
 body {
@@ -60,13 +60,13 @@ body {
 }
 
 .card_border{
-    border: 2px; 
-    border-radius: 10px; 
+    border: 2px;
+    border-radius: 10px;
 }
 
 .imagen-responsiva {
     margin: auto;
-    border: 2px solid #ffffff; 
+    border: 2px solid #ffffff;
     border-radius: 10px;
 }
 
@@ -74,9 +74,9 @@ body {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    width: 600px; 
-    margin-left: auto; 
-    margin-right: auto; 
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .imagen-posteo {
@@ -147,13 +147,13 @@ img {
     font-weight: bold;
     font-size: 19px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     padding: 3em 0;
     text-align: center;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .card-text-post {
@@ -161,16 +161,16 @@ img {
     font-family: 'Merriweather', serif;
     font-size: 15px;
     line-height: 1.5;
-    margin-top: 35px; 
-    margin-bottom: 10px; 
+    margin-top: 35px;
+    margin-bottom: 10px;
 }
 
 .card-text-date{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
-    line-height: 1.5; 
-    margin-top: 30px; 
-    margin-bottom: 10px; 
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 #post-date{
@@ -183,23 +183,23 @@ img {
     font-size: 25px;
     color: #333;
     margin-bottom: 20px;
-    text-align: center; 
-    line-height: 1; 
+    text-align: center;
+    line-height: 1;
 }
 
 
 #submit-postear{
-    background-color: #ffae00; 
-    color: white; 
-    padding: 10px 20px; 
-    font-size: 16px; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
+    background-color: #ffae00;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #submit-postear:hover {
-    background-color: #45a049; 
+    background-color: #45a049;
 }
 
 .form-control {
@@ -226,10 +226,51 @@ img {
 }
 
 .acerca_de_contenedor {
-    width: 600px; 
-    height: 300px; 
-    margin: 90px auto 0; 
-    padding: 10px; 
-    background-color: #f0f0f0; 
+    width: 600px;
+    height: 300px;
+    margin: 90px auto 0;
+    padding: 10px;
+    background-color: #f0f0f0;
     border-radius: 10px;
 }
+
+.form-control-registro{
+    display: block;
+    width: 30%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
+
+.jumbotron form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.jumbotron form p {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10;
+}
+
+.jumbotron form p label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.jumbotron form p input, .jumbotron form p select {
+    width: 200px;
+    box-sizing: border-box;
+}
+
+
+.btn-registrar {
+        text-align: center;
+    }
+
+.btn-registrar button {
+        margin-top: 10px;
+    }

@@ -32,6 +32,9 @@
     <div class="row">
         <div class="col-md-7 col-sm-12 col-xs-12">
             <form action="https://formsubmit.co/alvarerd1993@gmail.com" method="POST" class="contacto" method="post" >
+                <input type="hidden" name="_url" value="https://ricky1433.pythonanywhere.com/contacto.html">
+
+
                 <div class="col-lg-12 mb-3">
                     <input class="form-control" placeholder="Nombre" name="nombre">
                 </div>
@@ -50,16 +53,17 @@
                         <span id="loading" class="loading">
                             <span class="fa fa-refresh fa-spin"></span>
                         </span>
+                        <input type="hidden" name="_next" value="https://ricky1433.pythonanywhere.com/contacto/">
+                        <input type="hidden" name="_captcha" value="false">
                     </button>
                 </div>
 
-                <input type="hidden" name="_next" value="http://127.0.0.7:5500/proyecto/blog/templates/contacto.html">
-                <input type="hidden" name="_captcha" value="false">
+
 
             </form>
         </div>
     </div>
-    
+
 {% endblock contenido %}
 
 
